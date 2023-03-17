@@ -1,0 +1,26 @@
+SISTEM KASIR
+
+READ AND WRITE "item" with string
+READ AND WRITE "harga" with number
+READ AND WRITE "jumlah" with number
+READ AND WRITE "tambah item" with string
+IF "tambah item" is TRUE
+	back to first step
+ELSE
+	READ AND WRITE "total" with number
+	STORE "total" with CALCULATE "harga" multipy by "jumlah"
+	PRINT "total"
+END IF
+READ AND WRITE "ada voucher" with string
+IF "ada voucher" is TRUE
+	READ AND WRITE "diskon voucher" with number
+	STORE "total" with CALCULATE "total" minus by "diskon voucher"
+	PRINT "total"
+ELSE
+	READ AND WRITE "bayar" with number
+END IF
+READ AND WRITE "kembalian" with number
+STORE "kembalian" with CALCULATE "bayar" minus by "total" 
+PRINT "kembalian"
+READ AND WRITE "struk pembelian" with string
+PRINT "struk pembelian"
